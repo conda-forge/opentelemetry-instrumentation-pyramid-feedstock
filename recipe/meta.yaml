@@ -1,5 +1,5 @@
 {% set name = "opentelemetry-instrumentation-pyramid" %}
-{% set version = "0.59b0" %}
+{% set version = "0.60b0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/opentelemetry_instrumentation_pyramid-{{ version }}.tar.gz
-  sha256: ccdee507f224f95615ee74c670fe75c165d862b61ec0ba353336c4cbb7a963c8
+  sha256: 4a9b7da2dd5c5911020e4b94d4c28cab8c10b4442ee49b888a38fba3e68683a9
 
 build:
   noarch: python
@@ -22,10 +22,10 @@ requirements:
   run:
     - python >={{ python_min }}
     - opentelemetry-api ~=1.12
-    - opentelemetry-instrumentation-wsgi ==0.59b0
-    - opentelemetry-instrumentation ==0.59b0
-    - opentelemetry-semantic-conventions ==0.59b0
-    - opentelemetry-util-http ==0.59b0
+    - opentelemetry-instrumentation-wsgi ==0.60b0
+    - opentelemetry-instrumentation ==0.60b0
+    - opentelemetry-semantic-conventions ==0.60b0
+    - opentelemetry-util-http ==0.60b0
     - wrapt <2.0.0,>=1.0.0
     # - werkzeug ==0.16.1
     # - pyramid >=1.7
@@ -59,6 +59,7 @@ requirements:
     # - pyramid >=1.7
     # - opentelemetry-test-utils ==0.44b0
     # - opentelemetry-instrumentation-pyramid 
+    # - pyramid >=1.7
     # - pyramid >=1.7
     # - pyramid >=1.7
     # - pyramid >=1.7
